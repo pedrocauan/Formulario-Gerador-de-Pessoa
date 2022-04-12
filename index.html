@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="flex centraliza margin">
+        <!--formulário-->
+        <main class="centraliza conteudo ">
+            <div class="container container-style">
+                <form id="form" class="form-content centraliza" method="get">
+                    <!--NOME-->
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome..." autocomplete="off">
+                    </div>
+                    <!--SOBRENOME-->
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu Sobrenome..." autocomplete="off">
+                    </div>
+
+                    <!--PESO-->
+                    <div>
+                        <label for="peso">Peso</label>
+                        <input type="number" step="0.1" name="peso" id="peso" placeholder="ex: 80,5" autocomplete="off">
+                    </div>
+                    <!--ALTURA-->
+                    <div>
+                        <label for="alt">Altura</label>
+                        <input type="number" step="0.01" name="alt" id="alt" placeholder="ex: 1,75" autocomplete="off">
+                    </div>
+                    <!--BOTÃO ENVIAR-->
+                    <div class="botao">
+                        <input type="submit" name="enviar" id="enviar" class="enviar">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!--Retangulo com os resultados-->
+        <aside class="central container container-style conteudo">
+            <div id="resultado" class="resultado">
+                <h1>Resultado:</h1>
+            </div>
+        </aside>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
