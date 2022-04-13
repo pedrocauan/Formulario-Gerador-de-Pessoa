@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+} 
+
+body {
+    background: hsl(120, 50%, 11%);
+    background-color: rgb(red, rgb(0, 255, 0), blue);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Centraliza no centro da tela*/
+.centraliza {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*faz a main ocupar toda tela*/
+.conteudo {
+    min-height: 50vh;
+}
+
+/*tamanho do quadrado do formulário*/
+.container {
+    width: 100%;
+    max-width: 70rem;
+    height: 100%;
+    max-height: 70rem;
+    padding: 4rem;
+}
+
+/*estilização do quadrado*/
+.container-style {
+    background: hsl(120, 40%, 7%);
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.8rem;
+    color: hsl(0, 80%, 36%);
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.form-content label:hover {
+    cursor: pointer;
+}
+
+.form-content input {
+    height: 6rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 1rem;
+    font-weight: 900;
+    color: hsl(120, 20%, 16%);
+    font-size: 1.6rem;
+
+}
+
+input:focus::placeholder{
+    font-size: 1.8rem;
+
+}
+
+.form-content input:focus{
+    color: hsl(120, 40%, 7%);
+}
+
+/*Tira as setinhas do input number*/
+.form-content input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao .enviar {
+    margin-top: 5rem;
+    width: 100%;
+    height: 50%;
+    background-color: hsl(120, 40%, 15%);
+    color: #cacaca;
+    padding: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao .enviar:hover, .botao .enviar:focus {
+    border-radius: 1rem;
+    color: #cacaca;
+    background-color: hsl(120, 40%, 10%);
+}
+
+label {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+a {
+    display: block;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: rgb(119, 5, 5);
+}
+
+.resultado h1 {
+    font-size: 3rem;
+}
+
+.resultado h1, h2 {
+    color: #cacaca;
+}
+
+.resultado span {
+    color: #cacaca;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px)
+{
+    .flex {
+        flex-direction: column;
+    }
+
+
+    
+
+}
+
+@media (max-width: 601px)
+{
+  
+
+    .container {
+        min-width: 90vw;
+    }
+
+
+}
