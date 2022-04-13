@@ -1,5 +1,5 @@
 # Formulario-Gerador-de-Pessoa
-# https://tiny-puppy-0ddaa8.netlify.app/
+# site: https://tiny-puppy-0ddaa8.netlify.app/
 
 Formulário básico feito com javascript. O a atividade tem como proposta treinar as skills de:
 
@@ -11,6 +11,5 @@ Formulário básico feito com javascript. O a atividade tem como proposta treina
 1. [x] - O básico sobre orientação a objetos.
 1. [x] - O básico sobre eventos no javascript.
 
-# 
 
 
